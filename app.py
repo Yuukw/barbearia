@@ -10,10 +10,12 @@ DB_FILE = "agendamentos.json"
 ZAP_BARBEIRO = "5561999999999"  # <<< TROCA PELO NUMERO DO BARBEIRO COM 55 NA FRENTE
 
 SERVICOS = {
-    "corte": {"nome": "Corte", "preco": 40, "duracao": 30},
-    "barba": {"nome": "Barba", "preco": 30, "duracao": 30},
-    "corte_barba": {"nome": "Corte + Barba", "preco": 60, "duracao": 60},
+    "corte": {"nome": "Corte", "preco": 30, "duracao": 30},
+    "barba": {"nome": "Barba", "preco": 20, "duracao": 30},
+    "corte_barba": {"nome": "Corte + Barba", "preco": 50, "duracao": 60},
+    'sobrancelha': {'nome': 'Sobrancelha', 'preco': 15, 'duracao': 15},
 }
+SENHA_BARBEIRO = 'Felipeperfil1'
 
 class Agendamento(BaseModel):
     nome: str
