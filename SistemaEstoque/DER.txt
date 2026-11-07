@@ -1,0 +1,15 @@
+DER - Sistema de Estoque - Banco: estoque_db
+
++------------------------+       1 --- N       +--------------------------+
+| USUARIOS               |  <---------------->  | PRODUTOS                 |
++------------------------+       cadastra       +--------------------------+
+| PK id INT              |                      | PK id INT                |
+|    usuario VARCHAR(100)|                      |    nome VARCHAR(100)    |
+|    senha VARCHAR(100)  |                      |    descricao VARCHAR(255)|
+|    nome VARCHAR(100)   |                      |    quantidade INT        |
++------------------------+                      |    preco DECIMAL(10,2)   |
+                                                |    categoria VARCHAR(50) |
+                                                |    data_cadastro TIMESTAMP|
+                                                +--------------------------+
+
+Um USUARIO cadastra N PRODUTOS
